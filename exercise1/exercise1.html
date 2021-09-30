@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Newspaper</title>
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body
+    {
+      background-color: lightgrey;
+    }
+    #listing
+    {
+      float: left;
+      padding-left: 5%;
+    }
+    #header_nav
+    {
+      height: 60px;  
+      width: 1720px;
+      font-family: "sans-serif";
+      background-color: darkblue;
+      color: white;
+      float: left;
+      list-style-type: none;
+      padding: 0;
+      overflow: hidden;
+    }
+    #header_nav_one 
+    {
+      float: right;
+      padding-right: 10px;
+      outline-style: solid;
+      margin:auto;
+    }
+
+    #header_nav_two
+    {
+      float: right;
+      padding-right: 20px;
+      margin: auto;
+    }
+    #header_nav_three 
+    {
+      float: right;
+      padding-right: 15px;
+      color:black;
+      border-radius: 1px;
+      background: white;
+      border-radius: 80px;
+      margin: auto;
+    }
+    #sub1
+    {
+      width: 1500px;
+      font-family: "sans-serif";
+      background-color: #008385;
+      margin-top: 300px;
+      padding: 12px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      color: white;
+    }
+    #sub2
+    {
+      width: 1500px;
+      font-family: "sans-serif";
+      background-color: #008385;
+      margin-top: 1px;
+      padding: 12px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      color: white;
+    }
+    #sub3
+    {
+      width: 1500px;
+      font-family: "sans-serif";
+      background-color: skyblue;
+      margin-top: 1px;
+      padding: 12px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      color: white;
+    }
+    #sidepanel
+    {
+      margin-left: 1250px;
+      width: 362px;
+      height: 600px;
+      background-color: white;
+      padding-left: 5px;
+    }
+    #main-bit
+    {
+      background-color: white;
+      margin-left: 91.5px;
+      width: 1100px;
+      float:left;
+    }
+    #main-head
+    {
+      margin-left: 20px;
+    }
+    #main-sub
+    {
+      margin-left: 40px;
+      color: red;
+    }
+    #main-sub2
+    {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="application"></div>
+
+  <script type="text/babel">
+
+    //component for header bit
+    const Title = props => {
+      return <ul id='header_nav'>
+        <li id='listing'><h2>{ props.applicationName }</h2></li>
+        <li id='listing'><h3>Etusivu</h3></li>
+        <li id='listing'><h3>Uutiset</h3></li>
+        <li id='listing'><h3>Lehdet</h3></li>
+        <li id='listing'><h3>Asiakaspalvelu</h3></li>
+        <li id='header_nav_one'><h3>Valikko ≣</h3></li>
+        <li id='header_nav_two'><h3>Kirjaudu</h3></li>
+        <li id='header_nav_three'><h3>Tilaa</h3></li>
+      </ul>
+    }
+    //component for sub headers
+    const SubHeadingOne = props => {
+      return <div>
+        <h3 id='sub1'><b>PÄIVÄN TIMANNTTI: </b>Näin sota näkyy meissä edelleen</h3>
+      </div>
+    }
+    const SubHeadingTwo = props => {
+      return <div>
+        <h3 id='sub2'><b>PÄIVÄN TIMANNTTI: </b>Harriet Rabb tajusi avioliiton taloudelliset hyödyt ja kosi - Näin hän säästäisi aviopuolisona 19 200 euros</h3>
+      </div>
+    }
+    const SubHeadingThree = props => {
+      return <div>
+        <h3 id='sub3'><b>MAINOS: </b>Faktoille on nyt suuremmpi tavre kuin koskaan - tutsustu Hesariin 2 vikkoa maksutta!</h3>
+      </div>
+    }
+
+    //component for side bar 
+
+    const SideBar = props => {
+      return <div id='sidepanel'>
+        <h1><br></br>Luetuimmat<hr></hr></h1>
+        <ol>
+          <li><b>Rikosepälyt</b> | EIT-huijaus: Kuolleeksi väitetyn irakilaismielhen tytär valehteli perheen taustoista jo turvapaikkahakemuksessa</li>
+          <hr></hr>
+          <li><b>HS Vantaa</b> | Vantalle nousi vankilan näkäinen päiväkoti, jota pilkataan nyt surutta verkossa</li>
+          <hr></hr>
+          <li><b>Päivittyvä seuranta</b> | STM: Parasetamolia tai deksametasonia sisältävien lääkkeiden myyntiä rajoitetaan - Ministerio haluaa varmistaa valmisteiden riitävyyden</li>
+          <hr></hr>
+          <li><b>Nyt.fi</b> | Harry Styles puki yileen suomalaisen suunittelijan neuleen, nyt tatä "mummon tikkutäkkas" neulovat kymmenet tuhannet ympäri maailman - Soitimme vaatesuunittelijatte</li>
+          <hr></hr>
+          <li><b>Rikosepäilyt</b> | Atte Jääskeläinen sai syytteet liikenneturvallisuuden vaarantamisesta ja vammantuottamuksesta - "Olen myontänyt syyllisyyteni"</li>
+          <hr></hr>
+          <li><b>Helsinki</b> | Tyoryhmän ehdotus julki: Jättimäisesta hiivoimaista halutaan täysin uudenlainen tapahtumapaikka kaupungin asukkaille</li>          
+        </ol>
+
+        </div>
+    }
+    //component for main article
+    const MainArticle = props => {
+      return <div id='main-bit'>
+        <hr></hr>
+          <h1 id="main-head">Koronavirus</h1>
+          <center>
+          <img src="korona.jpg" width="1050"></img>
+          </center>
+          <h4 id="main-sub">HS seuraa</h4>
+          <h1 id="main-sub2">Päittyvä seuranta | STM: Parasetamoliatai deksametasonia sisältävien lääkkeiden myyntiä rajoitetaan</h1>
+          <img src="img2.jpg" width="1100"></img>
+
+        </div>
+    }
+
+    const App = props => {
+
+      const { applicationName } = props;
+
+      return <div>
+
+        <div className='title'>
+          <Title applicationName={ applicationName }
+          />
+        </div>
+
+        <div className='sub1'>
+          <SubHeadingOne SubHeadingOne = {SubHeadingOne}/>
+        </div>
+
+        <div className='sub2'>
+          <SubHeadingTwo SubHeadingTwo = {SubHeadingTwo}/>
+        </div>
+
+        <div className='sub3'>
+          <SubHeadingThree SubHeadingThree = {SubHeadingThree}/>
+        </div>
+        
+        <div className='main-bit'>
+          <MainArticle MainArticle = {MainArticle}/>
+        </div>
+
+        <div className='sidepanel'>
+          <SideBar SideBar = {SideBar}/>
+        </div>
+
+        
+
+      </div>
+    }
+
+    /* Render the App component */
+    ReactDOM.render(
+      <App
+        applicationName={"Helsigin Sanomat"}/>,
+      document.getElementById('application')
+    );
+  </script>
+</body>
+</html>
+
+    

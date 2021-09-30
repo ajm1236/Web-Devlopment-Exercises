@@ -1,0 +1,130 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Roku Streaming Stick+ | HD/4K/HDR Streaming Device",
+      "developer": "by Roku",
+      "price": 45.00,
+      "discount": [
+        "RRP: ",
+        49.99
+      ],
+      "rating": 4.5,
+      "location": "Ships to Finland",
+      "image": "item1.png"
+      
+    },
+    {
+      "id": 2,
+      "name": "Seagate Portable 2TB External Hard Drive Portable HDD",
+      "developer": "by Seagate",
+      "price": 69.99,
+      "discount": [
+        "RRP: ",
+        89.99
+      ],
+      "rating": 4.0,
+      "location": "Ships to Finland",
+      "image": "item2.png"
+      
+    },
+    {
+      "id": 3,
+      "name": "Apple Pencil (2nd Generation)",
+      "developer": "by Apple",
+      "price": 100.00,
+      "discount": [
+        "RRP: ",
+        119.99
+      ],
+      "rating": 4.0,
+      "location": "Ships to Finland",
+      "image": "item3.png"
+      
+    },
+    {
+      "id": 4,
+      "name": "TP-Link AC750 WiFi Extender",
+      "developer": "by TP-Link",
+      "price": 32.99,
+      "discount": [
+        "RRP: ",
+        49.99
+      ],
+      "rating": 3.5,
+      "location": "Ships to Finland",
+      "image": "item4.png"
+      
+    },
+    {
+      "id": 5,
+      "name": "Apple AirPods Max",
+      "developer": "by Apple",
+      "price": 250.00,
+      "discount": [
+        "RRP: ",
+        269.99
+      ],
+      "rating": 4.2,
+      "location": "Ships to Finland",
+      "image": "item5.png"
+      
+    },
+    {
+      "id": 6,
+      "name": "Seagate Barracuda 4TB HDD",
+      "developer": "by Seagate",
+      "price": 120.00,
+      "discount": [
+        "RRP: ",
+        140.00
+      ],
+      "rating": 3.9,
+      "location": "Ships to Finland",
+      "image": "item6.png"
+      
+    },
+    {
+      "id": 7,
+      "name": "iPhone X 256GB (Silver)",
+      "developer": "by Apple",
+      "price": 750,
+      "discount": [
+        "RRP: ",
+        800
+      ],
+      "rating": 4.6,
+      "location": "Ships to Finland",
+      "image": "item7.png"
+      
+    },
+    {
+      "id": 8,
+      "name": "MacBook Air (256GB)",
+      "developer": "by Apple",
+      "price": 1400.00,
+      "discount": [
+        "RRP: ",
+        1499.00
+      ],
+      "rating": 4.9,
+      "location": "Ships to Finland",
+      "image": "item8.png"
+      
+    },
+    {
+      "id": 9,
+      "name": "TP-Link 300Mbps Multi-Mode Wifi Router",
+      "developer": "by TP-Link",
+      "price": 14.99,
+      "discount": [
+        "RRP: ",
+        19.99
+      ],
+      "rating": 3.7,
+      "location": "Ships to Finland",
+      "image": "item9.png"
+      
+    }
+  ]
+}
